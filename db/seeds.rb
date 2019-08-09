@@ -159,4 +159,10 @@ genres = Hash[[
   "Synthpop"
 ].map { |genre| [genre, Genre.find_or_create_by(name: genre)] }]
 
+Song.create(title: "Golddigger", artist_id: 1, genre_id: 16)
 
+Artist.create(name: "Kanye West")
+
+Genre.create(name: "Rap")
+
+Note.create(content: "Changed early 2000's hip-hop.", song_id: 1)
